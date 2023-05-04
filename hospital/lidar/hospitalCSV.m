@@ -41,7 +41,7 @@ if ~exist('data_loaded', 'var')
 
 gt_hospital = 'gtHospital.csv'; % GroundTruth
 hector_hospital = 'hectorHospital.csv';
-gmap_hospital = 'kartoHospital.csv';
+gmap_hospital = 'gMapHospital.csv';
 karto_hospital = 'kartoHospital.csv';
 
 %   Read and extract the messages
