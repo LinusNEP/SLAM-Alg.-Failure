@@ -471,6 +471,7 @@ if tf
 
 %% Compute the scale drift    
             case 'Scale drift' 
+ %{
  % Extract the ground truth and estimated trajectories from the table
     gt_traj = [interp_gt_x, interp_gt_y, interp_gt_theta];
     hector_est_traj = [interp_hector_x, interp_hector_y, interp_hector_theta];
@@ -501,47 +502,47 @@ plot(time, hector_scale_deviation, time, gmap_scale_deviation, time, karto_scale
 xlabel('Time');
 ylabel('Scale deviation');
 title('Scale deviation over time');               
+%}                
                 
                 
-                
-% %   Compute the cumulative distance traveled by the ground truth trajectory
-%     gt_cumulative_distance = cumsum(sqrt(diff(interp_gt_x).^2 + diff(interp_gt_y).^2));
-% 
-% %   Compute the cumulative distance traveled by the hector trajectory
-%     hector_cumulative_distance = cumsum(sqrt(diff(interp_hector_x).^2 + diff(interp_hector_y).^2));
-% 
-% %   Compute the cumulative distance traveled by the karto trajectory
-%     karto_cumulative_distance = cumsum(sqrt(diff(interp_karto_x).^2 + diff(interp_karto_y).^2));
-% 
-% %   Compute the cumulative distance traveled by the gmap trajectory
-%     gmap_cumulative_distance = cumsum(sqrt(diff(interp_gmapping_x).^2 + diff(interp_gmapping_y).^2));
-% 
-% % Compute the scale drift
-%     scale_drift_hector = (hector_cumulative_distance ./ gt_cumulative_distance);
-%     scale_drift_karto = (karto_cumulative_distance ./ gt_cumulative_distance);
-%     scale_drift_gmap = (gmap_cumulative_distance ./ gt_cumulative_distance);
-% 
-% %   Interpolate the scale drift time
-%     drift_time_hector = imresize(hector_time,[4529,1]);
-%     drift_time_karto = imresize(karto_time,[4529,1]);
-%     drift_time_gmap = imresize(gmap_time,[4529,1]);
-% 
-% %   Plot the scale drift
-%     figure;
-%     plot(drift_time_hector, scale_drift_hector);
-%     hold on
-%     plot(drift_time_hector, scale_drift_karto);
-%     hold on
-%     plot(drift_time_hector, scale_drift_gmap);
-%     xlabel('Time (s)');
-%     ylabel('Scale Drift');
-%     legend('Hector-SLAM','Karto-SLAM','Gmapping')
-%     
-%     clc
-%     disp('The mean scale drift for Hector-SLAM, Karto-SLAM and Gmapping are:')
-%     disp([mean(scale_drift_hector) mean(scale_drift_karto) mean(scale_drift_gmap)])
-%     disp('The standard deviation of the scale drift for Hector-SLAM, Karto-SLAM and Gmapping are:')
-%     disp([std(scale_drift_hector) std(scale_drift_karto) std(scale_drift_gmap)])
+ %   Compute the cumulative distance traveled by the ground truth trajectory
+     gt_cumulative_distance = cumsum(sqrt(diff(interp_gt_x).^2 + diff(interp_gt_y).^2));
+ 
+ %   Compute the cumulative distance traveled by the hector trajectory
+     hector_cumulative_distance = cumsum(sqrt(diff(interp_hector_x).^2 + diff(interp_hector_y).^2));
+ 
+ %   Compute the cumulative distance traveled by the karto trajectory
+     karto_cumulative_distance = cumsum(sqrt(diff(interp_karto_x).^2 + diff(interp_karto_y).^2));
+ 
+ %   Compute the cumulative distance traveled by the gmap trajectory
+     gmap_cumulative_distance = cumsum(sqrt(diff(interp_gmapping_x).^2 + diff(interp_gmapping_y).^2));
+ 
+ % Compute the scale drift
+     scale_drift_hector = (hector_cumulative_distance ./ gt_cumulative_distance);
+     scale_drift_karto = (karto_cumulative_distance ./ gt_cumulative_distance);
+     scale_drift_gmap = (gmap_cumulative_distance ./ gt_cumulative_distance);
+ 
+ %   Interpolate the scale drift time
+     drift_time_hector = imresize(hector_time,[7008,1]);
+     drift_time_karto = imresize(karto_time,[7008,1]);
+     drift_time_gmap = imresize(gmap_time,[7008,1]);
+ 
+%   Plot the scale drift
+    figure;
+     plot(drift_time_hector, scale_drift_hector);
+     hold on
+     plot(drift_time_hector, scale_drift_karto);
+     hold on
+     plot(drift_time_hector, scale_drift_gmap);
+     xlabel('Time (s)');
+     ylabel('Scale Drift');
+     legend('Hector-SLAM','Karto-SLAM','Gmapping')
+     
+     clc
+     disp('The mean scale drift for Hector-SLAM, Karto-SLAM and Gmapping are:')
+     disp([mean(scale_drift_hector) mean(scale_drift_karto) mean(scale_drift_gmap)])
+     disp('The standard deviation of the scale drift for Hector-SLAM, Karto-SLAM and Gmapping are:')
+     disp([std(scale_drift_hector) std(scale_drift_karto) std(scale_drift_gmap)])
      
 %% Compute the time to convergence (TTC)
             case 'Time to convergence'
