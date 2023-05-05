@@ -3,7 +3,7 @@
 %  Understanding why SLAM algorithms fail in modern indoor environments.
 % =========================================================================
 
-%                   Long Passage Environment (Long Pass.)
+%                   CPS Laboratory Environment (CPS Lab.)
 
 % ======================= Useful Instruction ==============================
 %   This code runs in sections, first you have to use the 'Run' command to
