@@ -13,7 +13,7 @@
 %   using the 'Run section' command.
 % =========================================================================
 
-%%  ==================  Load Dataset the workspace  =======================
+%%  ==================  Load dataset to the workspace  =======================
 
 %   Check if there is existing data loaded in workspace  
 if ~isempty(who)
