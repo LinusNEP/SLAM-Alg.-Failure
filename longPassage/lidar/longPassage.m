@@ -236,7 +236,7 @@ if tf
     xlabel('x-pose [m]')
     ylabel('y-pose [m]')
 %    zlabel('z-pose [m]')
-    legend("GTCPSLab","hectorCPSLab","kartoCPSLab", "gmappingCPSLab")
+    legend("GT","Hector_SLAM","Karto-SLAM", "Gmapping")
 
 %   Plot the topic varaiables
     figure;
