@@ -202,7 +202,7 @@ if tf
     xlabel('x-pose [m]')
     ylabel('y-pose [m]')
 %    zlabel('z-pose [m]')
-    legend("GTLongPass","rtabLongPass","orbslamLongPass")
+    legend("GT ","RTAB","ORB-SLAM2")
 
 %   Plot the topic varaiables
     figure;
