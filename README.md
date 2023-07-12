@@ -17,10 +17,9 @@
   <img src="https://github.com/LinusNEP/RAAD-2023/blob/main/images/description.png" width="100%" />
 </p>
 
-
 LiDAR Mapping | Visual Mapping |
 :-: | :-: |
-<video src='https://github.com/LinusNEP/RAAD-2023/blob/main/images/lidarstudyCenter.mp4'> | <video src='https://youtu.be/pBlj0kQzTBY'> |
+<video src="https://github.com/LinusNEP/RAAD-2023/blob/main/images/lidarstudyCenter.mp4"> | <video src="https://youtu.be/pBlj0kQzTBY"> |
 
 
 ### Table of Contents
