@@ -3,9 +3,9 @@
   <h2 align="center">Understanding why SLAM algorithms fail in modern indoor environments</h2>
   This repository contains code and resources related to the paper "Understanding why SLAM algorithms fail in modern indoor environments". The paper investigates the reasons behind the failures of Simultaneous Localization and Mapping (SLAM) algorithms in indoor environments and provides insights into improving their performance.
   <p align="center">
-    <a href="https://cps.unileoben.ac.at/m-sc-linus-nwankwo/"><strong>Xingguang Zhong*</strong></a>
+    <a href="https://cps.unileoben.ac.at/m-sc-linus-nwankwo/"><strong>Nwankwo Linus*</strong></a>
     ·
-    <a href="https://cps.unileoben.ac.at/prof-elmar-rueckert/"><strong>Yue Pan*</strong></a>
+    <a href="https://cps.unileoben.ac.at/prof-elmar-rueckert/"><strong>Elmar Rueckert</strong></a>
   </p>
   
   <p align="center"><a href="https://www.unileoben.ac.at/"><strong>Montanüniversität Leoben</strong></a>
