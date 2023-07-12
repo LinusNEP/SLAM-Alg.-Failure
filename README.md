@@ -19,7 +19,7 @@
 
 LiDAR-based data acquisition | Visual-based data acquisition |
 :-: | :-: |
-![Video demo here](https://github.com/LinusNEP/RAAD-2023/blob/main/images/lidarstudyCenter.gif) | ![Video demo here](https://github.com/LinusNEP/RAAD-2023/blob/main/images/lidarstudyCenter.mp4) |
+[Video demo here](https://github.com/LinusNEP/RAAD-2023/blob/main/images/lidarstudyCenter.mp4) | [Video demo here](https://youtu.be/pBlj0kQzTBY) |
 
 
 ### Table of Contents
