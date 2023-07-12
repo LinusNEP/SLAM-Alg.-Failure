@@ -19,7 +19,7 @@
 
 LiDAR Mapping | Visual Mapping |
 :-: | :-: |
-<video src="https://github.com/LinusNEP/RAAD-2023/blob/main/images/lidarstudyCenter.mp4"> | <video src="https://youtu.be/pBlj0kQzTBY"> |
+![LiDAR-based data acquisation](https://github.com/LinusNEP/RAAD-2023/blob/main/images/lidarstudyCenter.gif") <video src="https://youtu.be/pBlj0kQzTBY"> |
 
 
 ### Table of Contents
