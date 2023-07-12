@@ -32,7 +32,7 @@ LiDAR-based data acquisition | Visual-based data acquisition |
 
 ### Introduction
 
-This repository contains codes and resources for the paper "Understanding why SLAM algorithms fail in modern indoor environments". The paper investigates the reasons behind the failures of Simultaneous Localization and Mapping (SLAM) algorithms in indoor environments and provides insights into improving their performance.
+This repository contains codes and resources for the paper "Understanding Why SLAM Algorithms Fail in Modern Indoor Environments". The paper investigates the reasons behind the failures of Simultaneous Localization and Mapping (SLAM) algorithms in indoor environments and provides insights into improving their performance.
 
 ### Setup Instruction
 
@@ -58,15 +58,15 @@ Add `source ~/o2s_ws/devel/setup.bash` to the very end of the opened bash file s
 
 - **Download datasets:**
 
-The datasets are recorded in a ROS bag files for each environments. They data include the LiDAR, RGB-D and IMU information from the sensors. In order to analyze the data and reproduce the experiments, you will need to download the rosbag files containing the sensor data from each of the indoor environments. You can download the rosbag files from [here](https://osf.io/qdxev/). Once downloaded, place the rosbag files in the workspace (src) directory.
+The datasets are recorded in ROS bag files for each environment. The data include the LiDAR, RGB-D and IMU information from the sensors. In order to analyze the data and reproduce the experiments, you will need to download the ROS bag files containing the sensor data from each of the indoor environments. You can download the ROS bag files from [here](https://osf.io/qdxev/). Once downloaded, place the ROS bag files in the workspace (src) directory.
 
-- **Extract useful data from rosbag file:**
+- **Extract useful data from the ROS bag file:**
 
 To extract the relevant topics from the rosbag files, you need to run the `rosbagPOSEtoCSV.py` or `rosbagTFtoCSV.py` scripts. This script is included in the repository and provides functionality to extract the tf, odom, pose, etc from the rosbag files. Execute the following command in your terminal:
 ```
 python3 rosbagPOSEtoCSV.py
 ```
-Note, before running the above code, do not forget to replace /home/linus/o2s_ws/src/o2s_robot/bagfile/raadDataset/controlledEnv/lidar/bags/gtCtrldEnv.bag with the actual path to the rosbag file you want to extract topics from. Do same for the output file path (/home/linus/o2s_ws/src/o2s_robot/bagfile/raadDataset/controlledEnv/lidar/gtCtrldEnv.csv). The script will extract the desired topics and save them as csv files for further analysis. Once all the relevant topics are extracted and saved in CSV format, follow the following examples to replicate our experiments. 
+Note, before running the above code, do not forget to replace `/home/linus/o2s_ws/src/o2s_robot/bagfile/raadDataset/controlledEnv/lidar/bags/gtCtrldEnv.bag` with the actual path to the ROS bag file you want to extract topics from. Do the same for the output file path ( `/home/linus/o2s_ws/src/o2s_robot/bagfile/raadDataset/controlledEnv/lidar/gtCtrldEnv.csv` ). The script will extract the desired topics and save them as CSV files for further analysis. Once all the relevant topics are extracted and saved in CSV format, follow the following examples to replicate our experiments. 
 
 ### Run the example files
 
@@ -78,21 +78,21 @@ To run the example codes provided in this repository, you need to have Matlab in
 
 To access the example files and scripts used in the paper, clone this GitHub repository to your local PC. Use the following command:
 ```
-cd ~/robot_ws/src
+cd ~/o2s_ws/src
 git clone https://github.com/LinusNEP/RAAD-2023.git
 ```
 This will create a local copy of the repository on your PC, allowing you to run the example files and explore the code.
 
 - **Run and evaluate:**
 
-The example matlab codes runs in sections, first you have to use the 'Run' command to load the parameters to matlab workspace, it will return an interactive dialog box where you have to select yes to load the data to the workspace. Subsequently, for any of the environments, select the metrics of choice (e.g., show the trajectories, absolute trajectory error (ATE), etc) for which you wish to analyse.
+The example Matlab codes run in sections, first you have to use the 'Run' command to load the parameters to the Matlab workspace, it will return an interactive dialogue box where you have to select yes to load the data to the workspace. Subsequently, for any of the environments, select the metrics of choice (e.g., show the trajectories, absolute trajectory error (ATE), etc) for which you wish to analyse.
 
 Please refer to the paper for more details on the experiments, methodology, and analysis conducted in this work.
 
 
 ### Citation
 
-If you use this work for any academic task, please cite our [original paper](https://link.springer.com/chapter/10.1007/978-3-031-32606-6_22#:~:text=In%20real%2Dworld%20environments%2C%20SLAM,position%20and%20the%20environment's%20structure.).
+If you use this work for any academic task, please cite the [paper](https://link.springer.com/chapter/10.1007/978-3-031-32606-6_22#:~:text=In%20real%2Dworld%20environments%2C%20SLAM,position%20and%20the%20environment's%20structure.).
 ```
 @InProceedings{10.1007/978-3-031-32606-6_22,
 author="Nwankwo, Linus
