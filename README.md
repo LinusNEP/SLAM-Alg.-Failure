@@ -58,11 +58,36 @@ Add `source ~/o2s_ws/devel/setup.bash` to the very end of the opened bash file s
 
 - **Download datasets:**
 
-The datasets are recorded in ROS bag files for each environment. The data include the LiDAR, RGB-D and IMU information from the sensors. In order to analyze the data and reproduce the experiments, you will need to download the ROS bag files containing the sensor data from each of the indoor environments. You can download the ROS bag files from [here](https://osf.io/qdxev/). Once downloaded, place the ROS bag files in the workspace (src) directory.
+The datasets are recorded in ROS bag files for each environment. The data include the LiDAR, RGB-D and IMU information from the sensors. In order to analyze the data and reproduce the experiments, you will need to download the ROS bag files containing the sensor data from each of the indoor environments. You can download the ROS bag files from [here](https://osf.io/qdxev/). Once downloaded, place the ROS bag files in the workspace (src) directory. Before proceeding to the next step, ensure you have the relevant SLAM algorithms installed or setup on your system:
+Lidar-based: [Hector-SLAM](https://github.com/tu-darmstadt-ros-pkg/hector_slam), [Gmapping](https://github.com/ros-perception/slam_gmapping), [Karto-SLAM](https://github.com/ros-perception/slam_karto). Visual-based: [RTAB](https://github.com/introlab/rtabmap),[ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2).
+To run any of the SLAM algorithms on the downloaded dataset, follow the following steps🥇:
+```
+roscore
+```
+starts the ROS core
+```
+rosbag info lidarHospitalEnv.bag
+```
+to check if the ROS bag contains all the necessary ROS topics. For lidar-based SLAM using Hector-SLAM, execute the following
+```
+rosparam set use_sim_time true
+rosbag play bagfiles/HospitalEnv/lidarHospitalEnv.bag --clock
+roslaunch hector_slam_launch tutorial.launch
+rosbag record -O lidarHospitalEnvData.bag -a
+```
+For visual-based datasets using RTAB for example, execute the following
 
-- **Extract useful data from the ROS bag file:**
+```
+rosparam set use_sim_time true
+rosbag play /bagfiles/HospitalEnv/visualHospitalEnv.bag  --clock
+roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start"
+rosbag record -O visualHospitalEnvData.bag -a
 
-To extract the relevant topics from the rosbag files, you need to run the `rosbagPOSEtoCSV.py` or `rosbagTFtoCSV.py` scripts. This script is included in the repository and provides functionality to extract the tf, odom, pose, etc from the rosbag files. Execute the following command in your terminal:
+```
+
+- **Extract useful data from the recorded ROS bag file:**
+
+To extract the relevant topics from the recorded rosbag files, you need to run the `rosbagPOSEtoCSV.py` or `rosbagTFtoCSV.py` scripts. This script is included in the repository and provides functionality to extract the tf, odom, pose, etc from the rosbag files. Execute the following command in your terminal:
 ```
 python3 rosbagPOSEtoCSV.py
 ```
