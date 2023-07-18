@@ -64,11 +64,11 @@ To run any of the SLAM algorithms on the downloaded dataset, follow the followin
 ```
 roscore
 ```
-starts the ROS core
+starts the ROS core node. Check if the ROS bag contains all the necessary ROS topics. 
 ```
 rosbag info lidarHospitalEnv.bag
 ```
-to check if the ROS bag contains all the necessary ROS topics. For lidar-based SLAM using Hector-SLAM, execute the following
+For lidar-based SLAM using Hector-SLAM for example, execute the following
 ```
 rosparam set use_sim_time true
 rosbag play bagfiles/HospitalEnv/lidarHospitalEnv.bag --clock
