@@ -58,8 +58,8 @@ Add `source ~/o2s_ws/devel/setup.bash` to the very end of the opened bash file s
 
 - **Download datasets:**
 
-The datasets are recorded in ROS bag files for each environment. The data include the LiDAR, RGB-D and IMU information from the sensors. In order to analyze the data and reproduce the experiments, you will need to download the ROS bag files containing the sensor data from each of the indoor environments. You can download the ROS bag files from [here](https://osf.io/qdxev/). Once downloaded, place the ROS bag files in the workspace (src) directory. Before proceeding to the next step, ensure you have the relevant SLAM algorithms installed or setup on your system:
-Lidar-based: [Hector-SLAM](https://github.com/tu-darmstadt-ros-pkg/hector_slam), [Gmapping](https://github.com/ros-perception/slam_gmapping), [Karto-SLAM](https://github.com/ros-perception/slam_karto). Visual-based: [RTAB](https://github.com/introlab/rtabmap),[ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2).
+The datasets are recorded in ROS bag files for each environment. The data include the LiDAR, RGB-D and IMU information from the sensors. In order to analyze the data and reproduce the experiments, you will need to download the ROS bag files containing the sensor data from each of the indoor environments. You can download the ROS bag files from [here](https://osf.io/qdxev/). Once downloaded, place the ROS bag files in the workspace (src) directory. Before proceeding to the next step, ensure you have the relevant SLAM algorithms installed or set up on your system.
+Lidar-based: [Hector-SLAM](https://github.com/tu-darmstadt-ros-pkg/hector_slam), [Gmapping](https://github.com/ros-perception/slam_gmapping) and [Karto-SLAM](https://github.com/ros-perception/slam_karto). Visual-based: [RTAB](https://github.com/introlab/rtabmap) and [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2).
 To run any of the SLAM algorithms on the downloaded dataset, follow the following steps🥇:
 ```
 roscore
