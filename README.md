@@ -32,7 +32,7 @@ LiDAR-based data acquisition | Visual-based data acquisition |
 
 ### Introduction
 
-This repository contains codes and resources for the paper "Understanding Why SLAM Algorithms Fail in Modern Indoor Environments". The paper investigates the reasons behind the failures of Simultaneous Localization and Mapping (SLAM) algorithms in indoor environments and provides insights into improving their performance.
+This repository contains codes and resources for the paper "[Understanding Why SLAM Algorithms Fail in Modern Indoor Environments](https://link.springer.com/chapter/10.1007/978-3-031-32606-6_22#:~:text=In%20real%2Dworld%20environments%2C%20SLAM,position%20and%20the%20environment's%20structure.)". The paper investigates the reasons behind the failures of Simultaneous Localization and Mapping (SLAM) algorithms in indoor environments and provides insights into improving their performance.
 
 ### Setup Instruction
 
