@@ -17,9 +17,9 @@
   <img src="https://github.com/LinusNEP/RAAD-2023/blob/main/images/description.png" width="100%" />
 </p>
 
-LiDAR-based data acquisition | Visual-based data acquisition |
+Sample LiDAR-based data acquisition | Sample visual-based data acquisition |
 :-: | :-: |
-[Video demo here](https://github.com/LinusNEP/RAAD-2023/blob/main/images/lidarstudyCenter.mp4) | [Video demo here](https://youtu.be/pBlj0kQzTBY) |
+[![Video](https://github.com/LinusNEP/RAAD-2023/blob/main/images/lidarStudycenter.gif")](https://youtu.be/WKIeU-evmBM) | [![Video](https://github.com/LinusNEP/RAAD-2023/blob/main/images/visionData")](https://youtu.be/pBlj0kQzTBY) |
 
 
 ### Table of Contents
