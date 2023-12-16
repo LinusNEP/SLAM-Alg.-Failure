@@ -28,11 +28,10 @@ LiDAR-based data acquisition | Visual-based data acquisition |
 - [Setup Instruction](https://github.com/LinusNEP/RAAD-2023#Setup-Instruction)
 - [Run the example files](https://github.com/LinusNEP/RAAD-2023#Run-the-example-files)
 - [Citation](https://github.com/LinusNEP/RAAD-2023#Citation)
-- [Contact](https://github.com/LinusNEP/RAAD-2023#Contact)
 
 ### Introduction
 
-This repository contains codes and resources for the paper "[Understanding Why SLAM Algorithms Fail in Modern Indoor Environments](https://link.springer.com/chapter/10.1007/978-3-031-32606-6_22#:~:text=In%20real%2Dworld%20environments%2C%20SLAM,position%20and%20the%20environment's%20structure.)". The paper investigates the reasons behind the failures of Simultaneous Localization and Mapping (SLAM) algorithms in indoor environments and provides insights into improving their performance.
+This repository contains the resources for the paper "[Understanding Why SLAM Algorithms Fail in Modern Indoor Environments](https://link.springer.com/chapter/10.1007/978-3-031-32606-6_22#:~:text=In%20real%2Dworld%20environments%2C%20SLAM,position%20and%20the%20environment's%20structure.)". The paper investigates the reasons behind the failures of simultaneous localization and mapping (SLAM) algorithms in indoor environments and provides insights into improving their performance.
 
 ### Setup Instruction
 
@@ -58,7 +57,7 @@ Add `source ~/o2s_ws/devel/setup.bash` to the very end of the opened bash file s
 
 - **Download datasets:**
 
-The datasets are recorded in ROS bag files for each environment. The data include the LiDAR, RGB-D and IMU information from the sensors. In order to analyze the data and reproduce the experiments, you will need to download the ROS bag files containing the sensor data from each of the indoor environments. You can download the ROS bag files from [here](https://osf.io/qdxev/). Once downloaded, place the ROS bag files in the workspace (src) directory. Before proceeding to the next step, ensure you have the relevant SLAM algorithms installed or set up on your system.
+The datasets are recorded in ROS bag files for each environment. The data include the LiDAR, RGB-D and IMU information from the sensors. To analyze the data and reproduce the experiments, you will need to download the ROS bag files containing the sensor data from each of the indoor environments. You can download the ROS bag files from [here](https://osf.io/qdxev/). Once downloaded, place the ROS bag files in the workspace (src) directory. Before proceeding to the next step, ensure you have the relevant SLAM algorithms set up on your system.
 Lidar-based: [Hector-SLAM](https://github.com/tu-darmstadt-ros-pkg/hector_slam), [Gmapping](https://github.com/ros-perception/slam_gmapping) and [Karto-SLAM](https://github.com/ros-perception/slam_karto). Visual-based: [RTAB](https://github.com/introlab/rtabmap) and [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2).
 To run any of the SLAM algorithms on the downloaded dataset, follow the following steps🥇:
 ```
@@ -118,7 +117,7 @@ Please refer to the paper for more details on the experiments, methodology, and 
 ### Citation
 
 If you use this work for any academic task, please cite the [paper](https://link.springer.com/chapter/10.1007/978-3-031-32606-6_22#:~:text=In%20real%2Dworld%20environments%2C%20SLAM,position%20and%20the%20environment's%20structure.).
-```
+```bibtex
 @InProceedings{10.1007/978-3-031-32606-6_22,
 author="Nwankwo, Linus
 and Rueckert, Elmar",
@@ -133,11 +132,3 @@ address="Cham",
 pages="186--194"
 }
 ```
-
-### Contact
-
-Should you have any questions, please contact:
-
-- Nwankwo Linus {[linus.nwankwo@unileoben.ac.at]()}
-
-
