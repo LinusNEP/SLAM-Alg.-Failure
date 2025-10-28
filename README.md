@@ -49,7 +49,7 @@ To run any of the SLAM algorithms on the downloaded dataset, follow the followin
 ```
 roscore
 ```
-Verify that the bags contain all the necessary data. E.g.,
+Verify that the bags contain all the necessary data, e.g.,
 ```
 rosbag info lidarHospitalEnv.bag
 ```
@@ -90,8 +90,7 @@ Please refer to the paper for more details on the experiments, methodology, and 
 If you use this work for any academic task, please cite the [paper](https://link.springer.com/chapter/10.1007/978-3-031-32606-6_22#:~:text=In%20real%2Dworld%20environments%2C%20SLAM,position%20and%20the%20environment's%20structure.).
 ```bibtex
 @InProceedings{10.1007/978-3-031-32606-6_22,
-author="Nwankwo, Linus
-and Rueckert, Elmar",
+author="Nwankwo, Linus and Rueckert, Elmar",
 editor="Petri{\v{c}}, Tadej
 and Ude, Ale{\v{s}}
 and {\v{Z}}lajpah, Leon",
