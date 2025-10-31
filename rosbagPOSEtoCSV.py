@@ -5,8 +5,8 @@ import tf
 import geometry_msgs.msg
 
 
-bag_file = "/home/linus/o2s_ws/src/o2s_robot/bagfile/raadDataset/controlledEnv/lidar/bags/gtCtrldEnv.bag"
-output_file = "/home/linus/o2s_ws/src/o2s_robot/bagfile/raadDataset/controlledEnv/lidar/gtCtrldEnv.csv"
+bag_file = "/path/to/your/bagfile/gtCtrldEnv.bag"
+output_file = "/path/to/your/output/gtCtrldEnv.csv"
 # Open the bag file
 bag = rosbag.Bag(bag_file)
 
