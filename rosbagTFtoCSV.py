@@ -3,8 +3,8 @@ import rosbag
 import tf
 import csv
 
-bag_file = "/home/linus/o2s_ws/src/o2s_robot/bagfile/raadDataset/hospital/lidar/bags/lidarHospital.bag"
-output_file = "/home/linus/o2s_ws/src/o2s_robot/bagfile/raadDataset/hospital/lidar/lidarHospital.csv"
+bag_file = "/path/to/your/bagfile/lidarHospital.bag"
+output_file = "/path/to/your/output/lidarHospital.csv"
 
 # Open the rosbag
 bag = rosbag.Bag(bag_file)
